@@ -1,7 +1,7 @@
- document.addEventListener("DOMContentLoaded", function() {
-     const h1 = document.createElement("h1");
-     const text = document.createTextNode("Hello world");
-     h1.appendChild(text);
-     document.body.appendChild(h1);
+// Your JavaScript goes here
+const button = document.querySelector('button')
+const body = document.body
 
- });
+button.addEventListener('click', _ => {
+  body.classList.toggle('offsite-is-open')
+})
