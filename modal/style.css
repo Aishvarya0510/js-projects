@@ -1,0 +1,113 @@
+.d-flex {
+    display: flex;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.btn-click {
+    background-color: blueviolet;
+    padding: 1rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Modal styles */
+
+.modal {
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.modal-open .container {
+    opacity: 0;
+}
+
+.modal-open .modal {
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px;
+}
+
+body {
+    height: 100vh;
+    background-color: #8080806e;
+    position: relative;
+}
+
+.content i {
+    color: white;
+    font-size: 5rem;
+}
+
+#close {
+    position: absolute;
+    right: -17px;
+    top: -22px;
+    border-radius: 50%;
+    color: white;
+    background-color: #808080;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.wave {
+    animation-name: waveanimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#close:hover {
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid white;
+}
+
+@keyframes waveanimation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+    10% {
+        transform: rotate(14.0deg);
+    }
+    20% {
+        transform: rotate(5.0deg);
+    }
+    30% {
+        transform: rotate(-8.0deg);
+    }
+    40% {
+        transform: rotate(14deg);
+    }
+    50% {
+        transform: rotate(-4.0deg);
+    }
+    60% {
+        transform: rotate(10.0deg);
+    }
+    100% {
+        transform: rotate(0.0deg);
+    }
+}
